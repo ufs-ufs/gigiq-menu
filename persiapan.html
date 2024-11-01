@@ -1,123 +1,104 @@
-
-<!DOCTYPE html>  
-<html lang="id">  
-<head>  
-    <meta charset="UTF-8">  
-    <title>Halaman AI - Sedang Dikembangkan</title>  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <!-- Google Fonts -->  
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">  
-    <!-- Font Awesome for Icons -->  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">  
-    <!-- GSAP for Animations -->  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>  
-    <style>  
-        body, html {  
-            margin: 0;  
-            padding: 0;  
-            height: 100%;  
-            width: 100%;  
-            background: linear-gradient(to bottom, #1a1a2e, #16213e);  
-            font-family: 'Roboto', sans-serif;  
-            overflow: hidden;  
-            color: #ffffff;  
-            display: flex;  
-            align-items: center;  
-            justify-content: center;  
-            flex-direction: column;  
-            position: relative;  
-        }  
-        .particles {  
-            position: absolute;  
-            width: 100%;  
-            height: 100%;  
-            top: 0;  
-            left: 0;  
-            pointer-events: none;  
-            overflow: hidden;  
-        }  
-        .particle {  
-            position: absolute;  
-            width: 3px;  
-            height: 3px;  
-            background: rgba(255, 255, 255, 0.5);  
-            border-radius: 50%;  
-            animation: moveParticle 10s linear infinite;  
-        }  
-        @keyframes moveParticle {  
-            from { transform: translateY(0); opacity: 1; }  
-            to { transform: translateY(-100vh); opacity: 0; }  
-        }  
-        .central-message {  
-            text-align: center;  
-            z-index: 1;  
-            animation: fadeIn 2s ease-out;  
-        }  
-        .central-message h1 {  
-            font-size: 3em;  
-            color: #00ffff;  
-            text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);  
-            margin-bottom: 10px;  
-        }  
-        .central-message p {  
-            font-size: 1.2em;  
-            color: #b3b3b3;  
-        }  
-        .animated-icons {  
-            margin-top: 20px;  
-            display: flex;  
-            gap: 15px;  
-            z-index: 1;  
-        }  
-        .animated-icons i {  
-            font-size: 2em;  
-            color: #00ffff;  
-            transition: color 0.3s ease;  
-        }  
-        .animated-icons i:hover {  
-            color: #b3b3b3;  
-        }  
-        /* Animasi Masuk Lembut */  
-        @keyframes fadeIn {  
-            from { opacity: 0; transform: translateY(20px); }  
-            to { opacity: 1; transform: translateY(0); }  
-        }  
-    </style>  
-</head>  
-<body>  
-    <div class="particles" id="particles"></div>  
-    <div class="central-message">  
-        <h1>Halaman Belum Tersedia</h1>  
-        <p>Halaman ini belum dapat diakses karena penelitian masih dalam persiapan. Begitu penelitian dimulai, halaman ini akan diperbarui secara otomatis. Terima kasih atas perhatian Anda..</p>  
-    </div>  
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <title>Halaman AI - Sedang Dikembangkan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animasi Berkedip U.F.S</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
     <style>
         body, html {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
-            background-color: #1a1a2e;
-            font-family: 'Orbitron', sans-serif;
-            color: #00ffff;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to bottom, #1a1a2e, #16213e);
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
         }
-
+        .particles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        .particle {
+            position: absolute;
+            width: 3px;
+            height: 3px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            animation: moveParticle 10s linear infinite;
+        }
+        @keyframes moveParticle {
+            from { transform: translateY(0); opacity: 1; }
+            to { transform: translateY(-100vh); opacity: 0; }
+        }
+        .central-message {
+            text-align: center;
+            z-index: 1;
+            animation: fadeIn 2s ease-out;
+        }
+        .central-message h1 {
+            font-size: 3em;
+            color: #00ffff;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+            margin-bottom: 10px;
+        }
+        .central-message p {
+            font-size: 1.2em;
+            color: #b3b3b3;
+        }
+        .animated-icons {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            z-index: 1;
+        }
+        .animated-icons i {
+            font-size: 2em;
+            color: #00ffff;
+            transition: color 0.3s ease;
+        }
+        .animated-icons i:hover {
+            color: #b3b3b3;
+        }
+        /* Animasi Masuk Lembut */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Tambahan untuk Animasi Berkedip U.F.S */
         .animated-text {
+            font-family: 'Orbitron', sans-serif;
             font-size: 4em;
             display: flex;
             gap: 0.2em;
+            margin-top: 20px;
         }
 
         .animated-text span {
             display: inline-block;
             animation: blink 1.5s infinite alternate;
+            color: #00ffff;
         }
 
         .animated-text span:nth-child(1) {
@@ -139,29 +120,44 @@
     </style>
 </head>
 <body>
-
-    <div class="animated-text">
-        <span>U</span>
-        <span>F</span>
-        <span>S</span>
+    <div class="particles" id="particles"></div>
+    
+    <div class="central-message">
+        <h1>Halaman Belum Tersedia</h1>
+        <p>Halaman ini belum dapat diakses karena penelitian masih dalam persiapan. Begitu penelitian dimulai, halaman ini akan diperbarui secara otomatis. Terima kasih atas perhatian Anda.</p>
+        
+        <!-- Animasi Berkedip U.F.S -->
+        <div class="animated-text">
+            <span>U</span>
+            <span>F</span>
+            <span>S</span>
+        </div>
     </div>
+    
+    <!-- Hitwebcounter Code START -->
+    <div style="margin-top: 20px;">
+        <a href="https://www.hitwebcounter.com" target="_blank">
+            <img src="https://hitwebcounter.com/counter/counter.php?page=17169072&style=0027&nbdigits=5&type=page&initCount=0" 
+                 title="Counter Widget" 
+                 alt="Visit counter For Websites" 
+                 border="0" />
+        </a>
+    </div>
+    <!-- Hitwebcounter Code END -->
+    
+    <script>
+        // Partikel bergerak pelan
+        const particlesContainer = document.getElementById('particles');
+        const numParticles = 50;
 
+        for (let i = 0; i < numParticles; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            particle.style.top = Math.random() * 100 + 'vh';
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.animationDuration = 6 + Math.random() * 4 + 's';
+            particlesContainer.appendChild(particle);
+        }
+    </script>
 </body>
-</html>
-
-    <script>  
-        // Partikel bergerak pelan  
-        const particlesContainer = document.getElementById('particles');  
-        const numParticles = 50;  
-
-        for (let i = 0; i < numParticles; i++) {  
-            const particle = document.createElement('div');  
-            particle.classList.add('particle');  
-            particle.style.top = Math.random() * 100 + 'vh';  
-            particle.style.left = Math.random() * 100 + 'vw';  
-            particle.style.animationDuration = 6 + Math.random() * 4 + 's';  
-            particlesContainer.appendChild(particle);  
-        }  
-    </script>  
-</body>  
 </html>
