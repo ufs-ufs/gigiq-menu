@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kuesioner Penelitian</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        h1 {
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        h3 {
+            margin-top: 30px;
+            text-align: left;
+        }
+        p {
+            text-align: justify;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            margin-bottom: 10px;
+        }
+        .options {
+            margin-left: 20px;
+        }
+        .options label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .textarea {
+            width: 100%;
+            height: 80px;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>KUESIONER PENELITIAN</h1>
+<h2>Pengalaman dan Persepsi Tenaga Kesehatan Gigi terhadap Penggunaan Aplikasi Mobile dan Metode Konvensional dalam Edukasi Pasien</h2>
+
+<p><strong>Peneliti:</strong> Urai Fajar Santosa</p>
+
+<p><strong>Petunjuk Pengisian:</strong></p>
+<ol>
+    <li>Kuesioner ini bertujuan untuk mengumpulkan data mengenai pengalaman dan persepsi Anda dalam menggunakan <strong>aplikasi mobile</strong> dan <strong>metode konvensional</strong> dalam edukasi pasien.</li>
+    <li>Jawaban Anda sangat penting untuk keberhasilan penelitian ini. Mohon untuk menjawab dengan jujur sesuai dengan pengalaman Anda.</li>
+    <li>Data yang Anda berikan akan dijaga kerahasiaannya dan hanya digunakan untuk kepentingan penelitian.</li>
+    <li>Silakan beri tanda (✓) pada jawaban yang sesuai atau isi pada tempat yang disediakan.</li>
+</ol>
+
+<hr>
+
+<div class="section">
+    <h3>A. Identitas Responden</h3>
+    <form>
+        <div class="question">
+            <p>1. <strong>Inisial Nama:</strong></p>
+            <input type="text" name="inisial_nama" required>
+        </div>
+        <div class="question">
+            <p>2. <strong>Usia:</strong></p>
+            <input type="number" name="usia" min="18" max="100" required> tahun
+        </div>
+        <div class="question">
+            <p>3. <strong>Jenis Kelamin:</strong></p>
+            <div class="options">
+                <label><input type="radio" name="jenis_kelamin" value="Laki-laki" required> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="Perempuan" required> Perempuan</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>4. <strong>Lama Pengalaman Kerja sebagai Tenaga Kesehatan Gigi:</strong></p>
+            <input type="number" name="pengalaman_kerja" min="0" max="50" required> tahun
+        </div>
+    </form>
+</div>
+
+<div class="section">
+    <h3>B. Pengalaman dengan Metode Konvensional</h3>
+    <form>
+        <div class="question">
+            <p>1. <strong>Seberapa sering Anda menggunakan metode konvensional (tanpa aplikasi) dalam edukasi pasien?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="frekuensi_konvensional" value="Sering" required> Sering</label>
+                <label><input type="radio" name="frekuensi_konvensional" value="Kadang-kadang" required> Kadang-kadang</label>
+                <label><input type="radio" name="frekuensi_konvensional" value="Jarang" required> Jarang</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. <strong>Seberapa mudah Anda menyampaikan materi edukasi menggunakan metode konvensional?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="kemudahan_konvensional" value="Mudah" required> Mudah</label>
+                <label><input type="radio" name="kemudahan_konvensional" value="Cukup mudah" required> Cukup mudah</label>
+                <label><input type="radio" name="kemudahan_konvensional" value="Sulit" required> Sulit</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. <strong>Seberapa puas Anda dengan metode konvensional dalam edukasi pasien?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="kepuasan_konvensional" value="Puas" required> Puas</label>
+                <label><input type="radio" name="kepuasan_konvensional" value="Cukup puas" required> Cukup puas</label>
+                <label><input type="radio" name="kepuasan_konvensional" value="Tidak puas" required> Tidak puas</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="section">
+    <h3>C. Pengalaman dengan Aplikasi Mobile</h3>
+    <form>
+        <div class="question">
+            <p>4. <strong>Seberapa sering Anda menggunakan aplikasi mobile dalam edukasi pasien selama periode penelitian?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="frekuensi_aplikasi" value="Sering" required> Sering</label>
+                <label><input type="radio" name="frekuensi_aplikasi" value="Kadang-kadang" required> Kadang-kadang</label>
+                <label><input type="radio" name="frekuensi_aplikasi" value="Jarang" required> Jarang</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>5. <strong>Seberapa mudah Anda mengoperasikan aplikasi mobile tersebut?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="kemudahan_aplikasi" value="Mudah" required> Mudah</label>
+                <label><input type="radio" name="kemudahan_aplikasi" value="Cukup mudah" required> Cukup mudah</label>
+                <label><input type="radio" name="kemudahan_aplikasi" value="Sulit" required> Sulit</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>6. <strong>Seberapa puas Anda dengan penggunaan aplikasi mobile dalam edukasi pasien?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="kepuasan_aplikasi" value="Puas" required> Puas</label>
+                <label><input type="radio" name="kepuasan_aplikasi" value="Cukup puas" required> Cukup puas</label>
+                <label><input type="radio" name="kepuasan_aplikasi" value="Tidak puas" required> Tidak puas</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="section">
+    <h3>D. Perbandingan Kedua Metode</h3>
+    <form>
+        <div class="question">
+            <p>7. <strong>Menurut Anda, metode mana yang lebih efektif dalam meningkatkan pemahaman pasien?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="efektivitas" value="Aplikasi mobile" required> Aplikasi mobile</label>
+                <label><input type="radio" name="efektivitas" value="Metode konvensional" required> Metode konvensional</label>
+                <label><input type="radio" name="efektivitas" value="Keduanya sama efektif" required> Keduanya sama efektif</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. <strong>Metode mana yang lebih efisien dalam hal waktu dan sumber daya?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="efisiensi" value="Aplikasi mobile" required> Aplikasi mobile</label>
+                <label><input type="radio" name="efisiensi" value="Metode konvensional" required> Metode konvensional</label>
+                <label><input type="radio" name="efisiensi" value="Keduanya sama efisien" required> Keduanya sama efisien</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>9. <strong>Metode mana yang lebih disukai oleh pasien?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="preferensi_pasien" value="Aplikasi mobile" required> Aplikasi mobile</label>
+                <label><input type="radio" name="preferensi_pasien" value="Metode konvensional" required> Metode konvensional</label>
+                <label><input type="radio" name="preferensi_pasien" value="Tidak ada perbedaan" required> Tidak ada perbedaan</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>10. <strong>Apakah Anda berencana untuk lebih sering menggunakan aplikasi mobile dibandingkan metode konvensional di masa depan?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="rencana_penggunaan" value="Ya" required> Ya</label>
+                <label><input type="radio" name="rencana_penggunaan" value="Tidak" required> Tidak</label>
+                <label><input type="radio" name="rencana_penggunaan" value="Mungkin" required> Mungkin</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="section">
+    <h3>E. Saran dan Masukan</h3>
+    <form>
+        <div class="question">
+            <p>11. <strong>Menurut Anda, metode mana yang secara keseluruhan lebih efektif dalam edukasi pasien?</strong></p>
+            <div class="options">
+                <label><input type="radio" name="metode_efektif" value="Aplikasi mobile" required> Aplikasi mobile</label>
+                <label><input type="radio" name="metode_efektif" value="Metode konvensional" required> Metode konvensional</label>
+                <label><input type="radio" name="metode_efektif" value="Keduanya sama efektif" required> Keduanya sama efektif</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>12. <strong>Apakah Anda memiliki saran singkat untuk meningkatkan efektivitas edukasi pasien?</strong> (Opsional)</p>
+            <textarea class="textarea" name="saran_meningkatkan"></textarea>
+        </div>
+    </form>
+</div>
+
+<hr>
+
+<p class="footer"><strong>Terima kasih atas partisipasi Anda dalam penelitian ini.</strong></p>
+<p class="footer"><strong>Hormat saya,</strong></p>
+<p class="footer"><strong>Urai Fajar Santosa</strong></p>
+
+</body>
+</html>
