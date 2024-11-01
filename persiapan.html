@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -16,21 +17,38 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     
     <style>
-        body, html {
+        /* Reset Margin dan Padding */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body sebagai Flex Container */
+        body, html {
             height: 100%;
             width: 100%;
-            background: linear-gradient(to bottom, #1a1a2e, #16213e);
             font-family: 'Roboto', sans-serif;
-            overflow: hidden;
             color: #ffffff;
+            background: linear-gradient(to bottom, #1a1a2e, #16213e);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* Konten Utama */
+        .content {
+            flex: 1; /* Memungkinkan konten utama tumbuh dan mengisi ruang yang tersedia */
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
             position: relative;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
         }
+
+        /* Partikel Bergerak */
         .particles {
             position: absolute;
             width: 100%;
@@ -52,8 +70,9 @@
             from { transform: translateY(0); opacity: 1; }
             to { transform: translateY(-100vh); opacity: 0; }
         }
+
+        /* Pesan Utama */
         .central-message {
-            text-align: center;
             z-index: 1;
             animation: fadeIn 2s ease-out;
         }
@@ -67,32 +86,15 @@
             font-size: 1.2em;
             color: #b3b3b3;
         }
-        .animated-icons {
-            margin-top: 20px;
-            display: flex;
-            gap: 15px;
-            z-index: 1;
-        }
-        .animated-icons i {
-            font-size: 2em;
-            color: #00ffff;
-            transition: color 0.3s ease;
-        }
-        .animated-icons i:hover {
-            color: #b3b3b3;
-        }
-        /* Animasi Masuk Lembut */
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        /* Tambahan untuk Animasi Berkedip U.F.S */
+
+        /* Animasi Berkedip U.F.S */
         .animated-text {
             font-family: 'Orbitron', sans-serif;
             font-size: 4em;
             display: flex;
             gap: 0.2em;
             margin-top: 20px;
+            justify-content: center;
         }
 
         .animated-text span {
@@ -117,33 +119,62 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0.3; }
         }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1;
+        }
+
+        footer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Responsif */
+        @media (max-width: 600px) {
+            .central-message h1 {
+                font-size: 2em;
+            }
+            .animated-text {
+                font-size: 2.5em;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="particles" id="particles"></div>
-    
-    <div class="central-message">
-        <h1>Halaman Belum Tersedia</h1>
-        <p>Halaman ini belum dapat diakses karena penelitian masih dalam persiapan. Begitu penelitian dimulai, halaman ini akan diperbarui secara otomatis. Terima kasih atas perhatian Anda.</p>
+    <!-- Konten Utama -->
+    <div class="content">
+        <!-- Partikel Bergerak -->
+        <div class="particles" id="particles"></div>
         
-        <!-- Animasi Berkedip U.F.S -->
-        <div class="animated-text">
-            <span>U</span>
-            <span>F</span>
-            <span>S</span>
+        <!-- Pesan Utama -->
+        <div class="central-message">
+            <h1>Halaman Belum Tersedia</h1>
+            <p>Halaman ini belum dapat diakses karena penelitian masih dalam persiapan. Begitu penelitian dimulai, halaman ini akan diperbarui secara otomatis. Terima kasih atas perhatian Anda.</p>
+            
+            <!-- Animasi Berkedip U.F.S -->
+            <div class="animated-text">
+                <span>U</span>
+                <span>F</span>
+                <span>S</span>
+            </div>
         </div>
     </div>
     
-    <!-- Hitwebcounter Code START -->
-    <div style="margin-top: 20px;">
+    <!-- Footer dengan Hitwebcounter -->
+    <footer>
+        <!-- Hitwebcounter Code START -->
         <a href="https://www.hitwebcounter.com" target="_blank">
             <img src="https://hitwebcounter.com/counter/counter.php?page=17169072&style=0027&nbdigits=5&type=page&initCount=0" 
                  title="Counter Widget" 
                  alt="Visit counter For Websites" 
                  border="0" />
         </a>
-    </div>
-    <!-- Hitwebcounter Code END -->
+        <!-- Hitwebcounter Code END -->
+    </footer>
     
     <script>
         // Partikel bergerak pelan
