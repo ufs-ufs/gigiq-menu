@@ -50,6 +50,22 @@
             margin-top: 60px;
             text-align: center;
         }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        .center {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -91,6 +107,7 @@
             <p>4. <strong>Lama Pengalaman Kerja sebagai Tenaga Kesehatan Gigi:</strong></p>
             <input type="number" name="pengalaman_kerja" min="0" max="50" required> tahun
         </div>
+        <!-- Hapus Pertanyaan 5: Pendidikan Terakhir -->
     </form>
 </div>
 
@@ -121,6 +138,10 @@
                 <label><input type="radio" name="kepuasan_konvensional" value="Tidak puas" required> Tidak puas</label>
             </div>
         </div>
+        <div class="question">
+            <p>4. <strong>Apa kendala utama yang Anda hadapi saat menggunakan metode konvensional?</strong></p>
+            <textarea class="textarea" name="kendala_konvensional" placeholder="Isi jawaban Anda di sini..."></textarea>
+        </div>
     </form>
 </div>
 
@@ -128,7 +149,7 @@
     <h3>C. Pengalaman dengan Aplikasi Mobile</h3>
     <form>
         <div class="question">
-            <p>4. <strong>Seberapa sering Anda menggunakan aplikasi mobile dalam edukasi pasien selama periode penelitian?</strong></p>
+            <p>5. <strong>Seberapa sering Anda menggunakan aplikasi mobile dalam edukasi pasien selama periode penelitian?</strong></p>
             <div class="options">
                 <label><input type="radio" name="frekuensi_aplikasi" value="Sering" required> Sering</label>
                 <label><input type="radio" name="frekuensi_aplikasi" value="Kadang-kadang" required> Kadang-kadang</label>
@@ -136,7 +157,7 @@
             </div>
         </div>
         <div class="question">
-            <p>5. <strong>Seberapa mudah Anda mengoperasikan aplikasi mobile tersebut?</strong></p>
+            <p>6. <strong>Seberapa mudah Anda mengoperasikan aplikasi mobile tersebut?</strong></p>
             <div class="options">
                 <label><input type="radio" name="kemudahan_aplikasi" value="Mudah" required> Mudah</label>
                 <label><input type="radio" name="kemudahan_aplikasi" value="Cukup mudah" required> Cukup mudah</label>
@@ -144,12 +165,16 @@
             </div>
         </div>
         <div class="question">
-            <p>6. <strong>Seberapa puas Anda dengan penggunaan aplikasi mobile dalam edukasi pasien?</strong></p>
+            <p>7. <strong>Seberapa puas Anda dengan penggunaan aplikasi mobile dalam edukasi pasien?</strong></p>
             <div class="options">
                 <label><input type="radio" name="kepuasan_aplikasi" value="Puas" required> Puas</label>
                 <label><input type="radio" name="kepuasan_aplikasi" value="Cukup puas" required> Cukup puas</label>
                 <label><input type="radio" name="kepuasan_aplikasi" value="Tidak puas" required> Tidak puas</label>
             </div>
+        </div>
+        <div class="question">
+            <p>8. <strong>Fitur apa saja dalam aplikasi mobile yang paling membantu Anda dalam melakukan edukasi pasien?</strong></p>
+            <textarea class="textarea" name="fitur_aplikasi" placeholder="Isi jawaban Anda di sini..."></textarea>
         </div>
     </form>
 </div>
@@ -158,15 +183,15 @@
     <h3>D. Perbandingan Kedua Metode</h3>
     <form>
         <div class="question">
-            <p>7. <strong>Menurut Anda, metode mana yang lebih efektif dalam meningkatkan pemahaman pasien?</strong></p>
+            <p>9. <strong>Menurut Anda, metode mana yang secara keseluruhan lebih efektif dalam edukasi pasien?</strong></p>
             <div class="options">
-                <label><input type="radio" name="efektivitas" value="Aplikasi mobile" required> Aplikasi mobile</label>
-                <label><input type="radio" name="efektivitas" value="Metode konvensional" required> Metode konvensional</label>
-                <label><input type="radio" name="efektivitas" value="Keduanya sama efektif" required> Keduanya sama efektif</label>
+                <label><input type="radio" name="metode_efektif" value="Aplikasi mobile" required> Aplikasi mobile</label>
+                <label><input type="radio" name="metode_efektif" value="Metode konvensional" required> Metode konvensional</label>
+                <label><input type="radio" name="metode_efektif" value="Keduanya sama efektif" required> Keduanya sama efektif</label>
             </div>
         </div>
         <div class="question">
-            <p>8. <strong>Metode mana yang lebih efisien dalam hal waktu dan sumber daya?</strong></p>
+            <p>10. <strong>Metode mana yang lebih efisien dalam hal waktu dan sumber daya?</strong></p>
             <div class="options">
                 <label><input type="radio" name="efisiensi" value="Aplikasi mobile" required> Aplikasi mobile</label>
                 <label><input type="radio" name="efisiensi" value="Metode konvensional" required> Metode konvensional</label>
@@ -174,7 +199,7 @@
             </div>
         </div>
         <div class="question">
-            <p>9. <strong>Metode mana yang lebih disukai oleh pasien?</strong></p>
+            <p>11. <strong>Metode mana yang lebih disukai oleh pasien?</strong></p>
             <div class="options">
                 <label><input type="radio" name="preferensi_pasien" value="Aplikasi mobile" required> Aplikasi mobile</label>
                 <label><input type="radio" name="preferensi_pasien" value="Metode konvensional" required> Metode konvensional</label>
@@ -182,7 +207,7 @@
             </div>
         </div>
         <div class="question">
-            <p>10. <strong>Apakah Anda berencana untuk lebih sering menggunakan aplikasi mobile dibandingkan metode konvensional di masa depan?</strong></p>
+            <p>12. <strong>Apakah Anda berencana untuk lebih sering menggunakan aplikasi mobile dibandingkan metode konvensional di masa depan?</strong></p>
             <div class="options">
                 <label><input type="radio" name="rencana_penggunaan" value="Ya" required> Ya</label>
                 <label><input type="radio" name="rencana_penggunaan" value="Tidak" required> Tidak</label>
@@ -196,16 +221,8 @@
     <h3>E. Saran dan Masukan</h3>
     <form>
         <div class="question">
-            <p>11. <strong>Menurut Anda, metode mana yang secara keseluruhan lebih efektif dalam edukasi pasien?</strong></p>
-            <div class="options">
-                <label><input type="radio" name="metode_efektif" value="Aplikasi mobile" required> Aplikasi mobile</label>
-                <label><input type="radio" name="metode_efektif" value="Metode konvensional" required> Metode konvensional</label>
-                <label><input type="radio" name="metode_efektif" value="Keduanya sama efektif" required> Keduanya sama efektif</label>
-            </div>
-        </div>
-        <div class="question">
-            <p>12. <strong>Apakah Anda memiliki saran singkat untuk meningkatkan efektivitas edukasi pasien?</strong> (Opsional)</p>
-            <textarea class="textarea" name="saran_meningkatkan"></textarea>
+            <p>10. <strong>Apakah Anda memiliki saran singkat untuk meningkatkan efektivitas edukasi pasien?</strong> (Opsional)</p>
+            <textarea class="textarea" name="saran_meningkatkan" placeholder="Isi jawaban Anda di sini..."></textarea>
         </div>
     </form>
 </div>
