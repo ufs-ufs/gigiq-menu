@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Halaman AI - Sedang Dikembangkan</title>
+    <title>Halaman Update Aplikasi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Google Fonts -->
@@ -86,6 +85,16 @@
             font-size: 1.2em;
             color: #b3b3b3;
         }
+        /* Tambahkan style tambahan untuk ikon */
+        .feature-preview i {
+            display: inline-block;
+            animation: bounce 1.5s infinite alternate;
+            margin-bottom: 10px;
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
 
         /* Animasi Berkedip U.F.S */
         .animated-text {
@@ -152,10 +161,16 @@
         
         <!-- Pesan Utama -->
         <div class="central-message">
-            <h1>Halaman Belum Tersedia</h1>
-            <p>Halaman ini belum dapat diakses karena penelitian masih dalam persiapan. Begitu penelitian dimulai, halaman ini akan diperbarui secara otomatis. Terima kasih atas perhatian Anda.</p>
-            
-            <!-- Animasi Berkedip U.F.S -->
+            <h1>Aplikasi Anda Sudah Terbaru!</h1>
+            <p>Saat ini, aplikasi Anda berjalan dengan versi terkini. Tidak ada pembaruan yang tersedia saat ini.</p>
+            <p style="margin-top: 20px; font-size: 1.1em;">Kami sedang menyiapkan fitur-fitur baru yang menarik. Nantikan pembaruan selanjutnya!</p>
+
+        <!-- Opsional: Menampilkan Icon Fitur atau Ilustrasi -->
+         <div class="feature-preview" style="margin-top: 30px;">
+            <i class="fas fa-rocket fa-3x" style="color: #00ffff;"></i> 
+        </div>
+
+            <!-- Animasi Berkedip U.P.D -->
             <div class="animated-text">
                 <span>U</span>
                 <span>F</span>
