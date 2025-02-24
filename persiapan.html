@@ -142,6 +142,25 @@
             height: auto;
         }
 
+        /* Style Tombol */
+        .button {
+            background-color: #00ffff; /* Warna tombol */
+            color: #1a1a2e; /* Warna teks */
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #00bfff; /* Warna tombol saat dihover */
+        }
+
         /* Responsif */
         @media (max-width: 600px) {
             .central-message h1 {
@@ -176,6 +195,12 @@
                 <span>F</span>
                 <span>S</span>
             </div>
+
+            <!-- Tombol Link ke Kuesioner -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeXTIKh64EzrQ3qSlWBLTjjDSvX4h5igtd5EURV2-0xjUNmrg/viewform?usp=sharing" class="button" target="_blank">Isi Kuesioner & Dapatkan Voucher!</a>
+
+            <!-- Catatan Hadiah -->
+            <p style="margin-top: 20px; font-size: 0.9em; color: #ddd;">Jawaban dengan nilai tertinggi & foto terbaik akan diundi untuk mendapatkan 2 voucher *scaling* (pembersihan karang gigi) gratis! Khusus untuk siswa SMKN 3 Singkawang kelas RPL</p>
         </div>
     </div>
     
